@@ -1,0 +1,65 @@
+# RNA-seq Preprocessing Configuration
+# 
+# This file contains parameters for the preprocessing pipeline
+# Modify these settings according to your experimental design
+
+# Input/Output paths
+input_file: "data/featureCount.txt"
+output_dir: "results"
+figures_dir: "results/figures"
+tables_dir: "results/tables"
+
+# Organism annotation
+organism: "org.Hs.eg.db"  # Human (use "org.Mm.eg.db" for mouse)
+id_type: "ENSEMBL"
+key_type: "SYMBOL"
+
+# Chromosome filtering
+# Keep only standard chromosomes (autosomes + X)
+chromosome_keep_pattern: "^[0-9X]+"
+# Exclude these patterns
+chromosome_exclude_pattern: NULL
+
+# Duplicate handling
+# Options: "random", "average", "highest"
+duplicate_method: "random"
+
+# Expression filtering
+min_mean_expression: 10
+# Alternative: filter by counts in samples
+# min_count: 5
+# min_samples: 3
+
+# Gene type filtering
+filter_gene_type: TRUE
+gene_types_to_keep: 
+  - "protein-coding"
+# To keep multiple types:
+# gene_types_to_keep:
+#   - "protein-coding"
+#   - "lncRNA"
+
+# Quality control
+generate_qc_plots: TRUE
+qc_plots:
+  - "gene_type_composition"
+  - "sample_correlation"
+  - "pca"
+  - "expression_distribution"
+
+# Sample renaming (optional)
+# Provide old and new names if you want to rename samples
+rename_samples: FALSE
+# sample_mapping:
+#   "old_sample1.bam": "Treatment_Rep1"
+#   "old_sample2.bam": "Treatment_Rep2"
+
+# Processing options
+remove_na_symbols: TRUE
+set_random_seed: TRUE
+random_seed: 123
+
+# Output options
+save_intermediate: FALSE
+include_metadata: TRUE
+compression: FALSE

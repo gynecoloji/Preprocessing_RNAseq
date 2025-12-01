@@ -1,0 +1,32 @@
+# R files
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+
+# Data files (add data files to gitignore to avoid committing large files)
+data/*.txt
+data/*.csv
+data/*.tsv
+data/*.bam
+data/*.fastq.gz
+
+# Results (generated outputs)
+results/
+*.pdf
+*.png
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*~
+*.tmp
+*.log
