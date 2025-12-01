@@ -273,9 +273,9 @@ MIT License - see [LICENSE](LICENSE) file
 
 ## Contact
 
-- **Author**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **Author**: gynecoloji
+- **Email**: gynecoloji@gmail.com
+- **GitHub**: [@gynecoloji](https://github.com/gynecoloji)
 
 ## References
 
