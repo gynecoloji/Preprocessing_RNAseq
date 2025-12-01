@@ -156,35 +156,4 @@ Potential additions (demonstrating forward thinking):
 | **Tools** | Bioconductor, DESeq2, edgeR |
 | **Engineering** | Modular design, testing, documentation |
 
-## Contact & Links
 
-- **GitHub**: [Repository Link]
-- **Documentation**: Complete user guide included
-- **Examples**: Production-ready workflows
-- **Support**: Issue tracking, contributing guide
-
----
-
-## Why This Project Stands Out
-
-1. **Professional Quality**: Production-ready, not a tutorial
-2. **Best Practices**: Follows bioinformatics standards
-3. **Well-Documented**: Multiple levels of documentation
-4. **Maintainable**: Clean, modular, tested code
-5. **Practical**: Solves real preprocessing challenges
-6. **Extensible**: Easy to add new features
-
-This project demonstrates the ability to:
-- Write clean, professional R code
-- Apply bioinformatics domain knowledge
-- Create production-ready software
-- Document and test thoroughly
-- Think about user experience
-- Follow industry best practices
-
-Perfect for computational biology roles requiring:
-- RNA-seq analysis pipelines
-- R package development
-- Bioinformatics workflow creation
-- Data preprocessing expertise
-- Software engineering skills

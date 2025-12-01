@@ -8,7 +8,7 @@ Thank you for considering contributing to this project! This document provides g
 
 If you find a bug:
 
-1. Check if the bug has already been reported in [Issues](https://github.com/yourusername/rnaseq-preprocessing/issues)
+1. Check if the bug has already been reported in [Issues](https://github.com/gynecoloji/rnaseq-preprocessing/issues)
 2. If not, create a new issue with:
    - Clear description of the problem
    - Steps to reproduce
@@ -30,7 +30,7 @@ Enhancement suggestions are welcome! Please:
 
 1. **Fork the repository**
    ```bash
-   git clone https://github.com/yourusername/rnaseq-preprocessing.git
+   git clone https://github.com/gynecoloji/rnaseq-preprocessing.git
    cd rnaseq-preprocessing
    ```
 

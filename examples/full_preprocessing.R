@@ -5,7 +5,7 @@
 # This script demonstrates the full preprocessing workflow from
 # FeatureCounts output to filtered, annotated count matrices
 #
-# Author: Your Name
+# Author: gynecoloji
 # Date: 2024
 
 # Load required libraries ======================================================
@@ -135,11 +135,7 @@ old_names <- c(
 
 new_names <- c(
   'BSA_R1', 'BSA_R2', 'BSA_R3',
-  'JAG1_R1', 'JAG1_R2', 'JAG1_R3',
-  'PEO4_CBP_R1', 'PEO4_CBP_R2', 'PEO4_CBP_R3',
-  'PEO4_Combi_R1', 'PEO4_Combi_R2', 'PEO4_Combi_R3',
-  'PEO4_Ctrl_R1', 'PEO4_Ctrl_R2', 'PEO4_Ctrl_R3',
-  'PEO4_IXZ_R1', 'PEO4_IXZ_R2', 'PEO4_IXZ_R3'
+  'JAG1_R1', 'JAG1_R2', 'JAG1_R3'
 )
 
 # Get current count column names

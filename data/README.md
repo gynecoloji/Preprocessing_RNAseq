@@ -27,24 +27,8 @@ If you don't have data yet, you can download example data:
 
 ```bash
 # Example: Download from GEO or your data repository
-# wget https://example.com/featureCount.txt
 ```
 
 ## Generating FeatureCounts Output
 
-If you're starting from BAM files, generate counts using:
-
-```bash
-featureCounts -a annotation.gtf -o featureCount.txt *.bam
-```
-
-For paired-end data:
-```bash
-featureCounts -p -a annotation.gtf -o featureCount.txt *.bam
-```
-
-## Notes
-
-- Large data files (>100MB) are excluded from git by default
-- Keep original data files as backups
-- Document your data source and processing steps
+If you're starting from fastq files, generate counts using my [Snakemake_RNAseq](https://github.com/gynecoloji/SnakeMake_RNAseq)

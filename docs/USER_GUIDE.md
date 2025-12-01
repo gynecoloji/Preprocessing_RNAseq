@@ -75,7 +75,7 @@ metadata <- get_metadata(df)
 ```r
 source("R/filter_chromosomes.R")
 
-# Remove Y chromosome, MT, and unplaced contigs
+# Remove Y chromosome (for female samples), MT (if not interested), and unplaced contigs
 df_filtered <- filter_chromosomes(df, keep_pattern = "^[0-9X]+")
 
 # Check chromosome distribution
@@ -83,7 +83,6 @@ chr_dist <- check_chromosome_distribution(df_filtered)
 ```
 
 **Why filter chromosomes?**
-- Y chromosome genes show sex-specific expression
 - MT genes have different expression dynamics
 - Unplaced contigs (KI, GL) are unreliable
 
@@ -342,7 +341,7 @@ Duplicate entries: 5000
 ## Next Steps
 
 After preprocessing:
-1. **Differential Expression** - Use DESeq2 or edgeR
+1. **Differential Expression** - Use DESeq2, Limma or edgeR
 2. **Pathway Analysis** - GSEA, GO enrichment
 3. **Visualization** - Volcano plots, heatmaps
 4. **Integration** - Multi-omics analysis
@@ -353,11 +352,11 @@ If you use this pipeline, please cite:
 
 ```
 [Your Name] (2024). RNA-seq Preprocessing Pipeline. 
-GitHub: https://github.com/yourusername/rnaseq-preprocessing
+GitHub: https://github.com/gynecoloji/rnaseq-preprocessing
 ```
 
 ## Support
 
 For issues or questions:
-- GitHub Issues: https://github.com/yourusername/rnaseq-preprocessing/issues
-- Email: your.email@example.com
+- GitHub Issues: https://github.com/gynecoloji/rnaseq-preprocessing/issues
+- Email: gynecoloji@gmail.com
